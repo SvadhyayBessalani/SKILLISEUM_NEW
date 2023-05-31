@@ -1796,3 +1796,192 @@ padding: 25px 0px;
         margin: 0 0 10px 0;
     }
 }
+
+
+/* ==================================== About css ================================== */
+.upskill-section{
+    background-color: #ededf3;
+    position: relative;
+}
+.upskill-section .main-conttent-wrapper{
+  align-items: center;
+}
+
+/* =========================== helping card css ================= */
+
+.help-business-card{
+    display:flex;
+    gap: 0 60px;
+    justify-content: center;
+}
+.business-heading{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #333;
+    text-transform: capitalize;
+
+}
+.help-business-card .card{
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  border: unset;
+  margin-bottom: 30px;
+}
+.help-business-card .card-body{
+ padding: 30px;
+}   
+.help-business-card .card p{
+margin: 0px;
+text-align: center;
+font-size: 15px;
+line-height: 22px;
+font-weight: 400;
+}
+.help-business-card .card h4{
+   margin-bottom: 25px;
+}
+
+/*============= helping css end here  =========================  */
+.help-business-section{
+    padding: 55px 0px;
+}
+
+/* ========== key point css =========================*/
+.key-point-section .card{
+    border: unset;
+}
+.inner-key-wrapper{
+    display:flex;
+    justify-content:space-between;
+}
+.inner-key-card{
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+    padding: 10px 0px;
+    border: unset;
+}
+.inner-key-card img{
+    width: 125px;
+    height: 125px;
+    min-height: 125px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: -41px 0px; */
+}
+.inner-key-wrapper .card-body h5{ 
+   text-align: center;
+   font-size: 22px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+
+/*============================ power skill section css ============ */
+.power-skills-section .power-skill-accordion{
+
+}
+.power-skill-accordion  .power-skill-item{
+    margin-bottom: 20px;
+    border: unset;
+    border-radius: 0px;
+}
+.power-skill-item .accordion-header .accordion-button{
+    border-radius: unset;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+  padding-left: 35px;
+  
+}
+.power-skill-item .accordion-header .accordion-button::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #333;
+    border-radius: 50px;
+    left: 0px;
+}
+.power-skill-item .accordion-button::after{
+  background-image: unset;
+transition: unset;
+}
+.power-skill-item .text-img {
+    display:flex;
+    gap: 0 20px;
+    margin-bottom: 25px;   
+    align-items: center; 
+}
+.power-skill-item .text-img img{
+    width: 55px;
+    height: 55px;    
+}
+.power-skill-item .text-img p{
+    margin: 0px;
+    text-transform: capitalize;
+}
+.power-skill-item .accordion-header .accordion-button:focus{
+  box-shadow: unset;
+}
+.power-skill-item.accordion-item:last-of-type .accordion-button.collapsed{
+   border-radius: unset;
+}
+.power-skill-item .accordion-button:not(.collapsed){
+   background-color: unset;
+   color: #4aa1ca;
+}
+.img-wrraper-power-skill{
+    position: relative;
+}
+.img-wrraper-power-skill .skill-text-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 28px;
+    width: 155px;
+    height: 125px;
+    /* color: #fff; */
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    border: 2px solid rgba(128, 128, 128, 0.774);
+    position: absolute;
+}
+.img-wrraper-power-skill .skill-text-card img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+/* ==============================company-trainer-section ======================= */
+.company-trainer-section{
+  padding: 55px 0px;
+}
+.company-trainer-section p{
+    margin-bottom: 15px;
+     text-align: center;
+     font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 32px;
+    color: #333;
+}
+.trainer-company-logo .brand-carousel{
+  
+}
+.trainer-company-logo .single-logo img{
+    height: auto;
+    max-height: 55px;
+}

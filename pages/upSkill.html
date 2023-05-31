@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../Assets/Images/logo.png"> -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Skill Seum</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/favicon-icon.png" />
+    <!-- stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet"/> -->
+    <!-- <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+    <link href="../Assets/Style/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="../Assets/Style/style.css" />
+    <link rel="stylesheet" href="../Assets/Style/responsive.css" />
+
+
+<body>
+    </head>
+
+    <div class="wrapper">
+        <header class="custom-header">
+            <nav class="navbar navbar-expand-lg " style="background-color: #ededf3;">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="../Assets/Images/skilliseum logo copy.png" alt="logo" class="img-fluid" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="sidebar-toggle">
+                        <i class="fa-solid fa-bars" id="togglebars"></i>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 custom-navbar">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item custom-nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex bttn-wrapper" role="search">
+                            <button class="btn btn-warning ms-3 common-btn" type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-------- mobile side bar ----->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="#">
+                    <img src="../Assets/Images/skilliseum logo copy.png" alt="sidebar-logo" class="img-fluid" />
+                </a>
+                <i class="fa-solid fa-xmark" id="closebar"></i>
+            </div>
+            <ul class="navbar-nav  navbar-sidebar">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-4" role="search">
+                <button class="btn btn-warning" type="submit">Login</button>
+            </form>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+
+    <section class="hero-section upskill-section pb-0">
+        <div class="container">
+            <div class="main-conttent-wrapper row flex-md-row flex-sm-column flex-sm-column-reverse">
+                <div class="left col-lg-7 col-md-12">
+                    <h3 class="hero-heading heading" data-aos="fade-up" style="color: #0a4888;">Get ahead of the curve and Upskill yourself.</h3>
+                    <p class="sub-content" data-aos="fade-up" data-aos-delay="300"
+                        data-aos-anchor-placement="top-center">The ultimate platform for cultivating and sustaining essential skills foe performance success!</p>
+                    <div class="btn-wrapper">
+                        <button class="btn-color Get-in-touch-btn" data-aos="fade-up" data-aos-delay="500">Get in
+                            touch</button>
+                    </div>
+                </div>
+                <div class="right col-lg-5 col-md-12">
+                    <div class="hero-img-wrapper" data-aos="fade-left">
+                        <!-- <img src="../Assets/Images/bg-trasparent-gifs.gif" alt=""> -->
+                        <img  src="../Assets/Images/segment girl 1.png" alt="girlImg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help-business-section">
+        <div class="container">
+            <div class="col-12">
+                <h3 class="business-heading">How does skilliseum help your Business?</h3>
+            </div>
+            <div class="help-business-card">
+                <div class="card">
+                    <img src="../Assets/Images/empower new hires.png" alt="business-img" class="img-fluid" />
+                    <div class="card-body">
+                        <h4>Empower new hires</h4>
+                        <p>Cultivate a culture of investing in new hires rather than expensive hiring. </p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/Images/analytic driven lms.png" alt="business-img" class="img-fluid" />
+                    <div class="card-body">
+                        <h4>Analytics-Driven LMS</h4>
+                        <p>Assess the impact of training employee progress and providing details reporting. </p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../Assets/Images/diverse course catalogue.png" alt="business-img" class="img-fluid" />
+                    <div class="card-body">
+                        <h4>Diverse course catalog</h4>
+                        <p>With more than 100+ courses to choose from, there is something for everyone</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="key-point-section">
+        <div class="container">
+           <div class="card">
+              <div class="card-body">
+                    <h3 class="business-heading">key points of our uniqness</h3>
+                  <div class="inner-key-wrapper">
+                      <div class="card  inner-key-card">
+                      <img src="../Assets/Images/cognition appoach .png"  alt="cognitionImg" class="img-fluid"/>
+                      <div class="card-body">
+                          <h5>cognition approach</h5>
+                          <p>we integrate a social cognition approach enabling leaders and managersto bettre understand and predit beavior in social context.</p>
+                      </div>
+                   </div>
+                   <div class="card  inner-key-card">
+                      <img src="../Assets/Images/emotional capital.png"  alt="cognitionImg" class="img-fluid"/>
+                      <div class="card-body">
+                          <h5>Emotional capital</h5>
+                          <p>Boost employee's well-being happiness and resilience by proving opportunitis for personal growth mastery and purpose</p>
+                      </div>
+                   </div>
+                   <div class="card  inner-key-card">
+                      <img src="../Assets/Images/constructivism.png"  alt="cognitionImg" class="img-fluid"/>
+                      <div class="card-body">
+                          <h5>constructivism</h5>
+                          <p>we integrate a social cognition approach enabling leaders and managersto bettre understand and predit beavior in social context.</p>
+                      </div>
+                   </div>
+                   <div class="card  inner-key-card">
+                      <img src="../Assets/Images/leadership.png"  alt="cognitionImg" class="img-fluid"/>
+                      <div class="card-body">
+                          <h5>leadership</h5>
+                          <p>we integrate a social cognition approach enabling leaders and managersto bettre understand and predit beavior in social context.</p>
+                      </div>
+                   </div>
+                   <div class="card  inner-key-card">
+                      <img src="../Assets/Images/analysis.png"  alt="cognitionImg" class="img-fluid"/>
+                      <div class="card-body">
+                          <h5>analysis</h5>
+                          <p>we integrate a social cognition approach enabling leaders and managersto bettre understand and predit beavior in social context.</p>
+                      </div>
+                   </div>
+                  </div>
+              </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="power-skills-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="business-heading">Build your workforce with power skills</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrraper-power-skill">
+                        <img src="../Assets/Images/Build your Workforce with Power Skills main graphics.png" alt="BuildImg" />
+                        <div class="skill-text-card">
+                            <img src="../Assets/Images/pmp.png " alt="pmp-img" class="img-fluid"/>
+                            <p class="mb-0">PMP</p>
+                        </div>
+                        <!-- <div class="">
+                            <img src="../Assets/Images/pmp.png " alt="pmp-img" class="img-fluid"/>
+                        </div> -->
+                    </div>
+                </div>
+                <div  class="col-md-5 offset-md-1">
+                    <div class="accordion power-skill-accordion" id="accordionExample">
+                        <div class="accordion-item power-skill-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              project  management
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management institute</p>
+                                </div>
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management professional</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item power-skill-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Cyber security
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management institute</p>
+                                </div>
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management professional</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item power-skill-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              software development
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management institute</p>
+                                </div>
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management professional</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item power-skill-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                              Big data
+                            </button>
+                          </h2>
+                          <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management institute</p>
+                                </div>
+                                <div class="text-img">
+                                    <img src="../Assets/Images/graduation-hat.png" alt="graduation-hat" />
+                                    <p>project management professional</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-trainer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="business-heading">Trainer factsheet</h3>
+                </div>
+                <p>get trained by educators from global tech companies</p>
+                <div class="trainer-company-logo">
+                    <div class="brand-carousel section-padding owl-carousel mb-0 pb-4">
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="brand-carousel section-padding owl-carousel mb-0 pb-4">
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="brand-carousel section-padding owl-carousel  pb-4">
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/Accenture.png" alt="AccentureImg" class="img-fluid" />
+                        </div>
+                        <div class="single-logo">
+                            <img src="../Assets/Images/microsoft.png" alt="microsoftImg class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="../Assets/Images/Clip.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="../Assets/Images/Clip.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+      </section> -->
+
+
+
+     <section class="contact-us">
+        <div class="container">
+            <div class="conattct-main-wrapper" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="contact-wrapper">
+                    <h3 class="contact-heading heading">Contact us for a free consultation</h3>
+                    <p class="contact-sub-conttant">Contact us today to learn more about our corporate training programs
+                        and how we can help you elevate your team's skills with the latest industry knowledge and
+                        expertise.</p>
+                    <a href="#" style="text-decoration: none;color: #fff;" class="contact-btn">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <footer class="footer">
+        <div class="container">
+            <div class="ft-wrapper d-flex">
+                <div class="pt pt-one">
+                    <div class="footer-logo">
+                        <img src="../Assets/Images/skilliseum white logo.png" alt="" class="footer-logo">
+                    </div>
+                    <p class="ft-text">Contact us today to learn more about our corporate training programs and how we
+                        can help you elevate your team's skills with the latest industry knowledge and expertise.</p>
+                    <span class="read-more">Read More</span>
+                    <div class="s-wrapper">
+                        <ul class="social-media-ul">
+                            <li>
+                                <a class="" href="#"> <i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="" href="#"> <i class="fa-brands fa-skype"></i></a>
+                            </li>
+                            <li>
+                                <a class="" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt pt-two d-flex flex-column">
+                    <h6>Essentials</h6>
+                    <a href="#">Infrastructure</a>
+                    <a href="#">Clientt Support</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Professional</a>
+                    <a href="#">Careers</a>
+                    <a href="#">sitmap</a>
+                </div>
+                <div class="pt pt-three">
+                    <h6>Recent posts</h6>
+                    <div class="rp-wrapper d-flex">
+                        <div class="lrp">
+                            <img src="../Assets/Images/Rounded Rectangle 1.png" alt="">
+                        </div>
+                        <div class="rrp d-flex flex-column d-flex">
+                            <span>October 8, 2021</span>
+                            <span>Why Should Business</span>
+                            <span>Payroll Outstanding?</span>
+                        </div>
+                    </div>
+                    <div class="rp-wrapper d-flex">
+                        <div class="lrp">
+                            <img src="../Assets/Images/Rounded Rectangle 1.png" alt="">
+                        </div>
+                        <div class="rrp d-flex flex-column d-flex">
+                            <span>October 8, 2021</span>
+                            <span>Why Should Business</span>
+                            <span>Payroll Outstanding?</span>
+                        </div>
+                    </div>
+                    <div class="rp-wrapper d-flex">
+                        <div class="lrp">
+                            <img src="../Assets/Images/Rounded Rectangle 1.png" alt="">
+                        </div>
+                        <div class="rrp d-flex flex-column d-flex">
+                            <span>October 8, 2021</span>
+                            <span>Why Should Business</span>
+                            <span>Payroll Outstanding?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt pt-four">
+                    <h6>Contact Us</h6>
+
+                    <div class="rrp d-flex flex-column d-flex">
+                        <span class="d-flex flex-row align-items-center"><img src="../Assets/Images/location.png"
+                                alt="">Address</span>
+                        <span>United states 866 Wilshire, 2nd Street Los Angeles 90024</span>
+                    </div>
+
+                    <div class="rrp d-flex flex-column d-flex">
+                        <span class="d-flex flex-row align-items-center"><img src="../Assets/Images/call.png"
+                                alt="">Address</span>
+                        <span>+555 5678 12340</span>
+                    </div>
+
+                    <div class="rrp d-flex flex-column d-flex">
+                        <span class="d-flex flex-row align-items-center"><img src="../Assets/Images/mail.png"
+                                alt="">Address</span>
+                        <span>support@creote.com</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- <script src="../Scripts/slicks.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+    <script src="../Scripts/script.js"></script>
+
+</body>
+</html>
