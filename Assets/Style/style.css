@@ -1802,13 +1802,61 @@ padding: 25px 0px;
 .upskill-section{
     background-color: #ededf3;
     position: relative;
+    margin-bottom: 55px;
+}
+.upskill-section::before{
+    content: "";
+    background-image: url('../Images/seg\ 1\ mid\ icon.png');
+    background-repeat: no-repeat;
+    height: 220px;
+    position: absolute;
+    bottom: -170px;
+    width: 220px;
+    z-index: 1;
+    background-size: contain;
+    animation: momenttwo 5s;
+    animation-iteration-count: infinite;
+    display: block;
+
 }
 .upskill-section .main-conttent-wrapper{
   align-items: center;
 }
 
 /* =========================== helping card css ================= */
-
+.help-business-section{
+    position: relative;
+}
+.help-business-section::after{
+   content: '';
+   background-image: url("../Images/puzzle\ piece.png");
+   width: 220px;
+   height: 220px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: contain;
+   opacity: 0.3;
+   animation: momenttwo 5s;
+   animation-iteration-count: infinite;
+}
+.help-business-section::before{
+  content: "";
+  background-image: url("../Images/puzzle\ piece.png");
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  background-position: bottom;
+  background-size: contain;
+  opacity: 0.3;
+  animation: momenttwo 5s;
+  animation-iteration-count: infinite;
+}
 .help-business-card{
     display:flex;
     gap: 0 60px;
@@ -1816,10 +1864,10 @@ padding: 25px 0px;
 }
 .business-heading{
     text-align: center;
-    margin-bottom: 35px;
-    font-size: 32px;
+    margin-bottom: 45px;
+    font-size: 42px;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 55px;
     color: #333;
     text-transform: capitalize;
 
@@ -1828,10 +1876,11 @@ padding: 25px 0px;
   width: 100%;
   max-width: 355px;
   height: auto;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
   border-radius: 12px;
   border: unset;
   margin-bottom: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .help-business-card .card-body{
  padding: 30px;
@@ -1849,12 +1898,13 @@ font-weight: 400;
 
 /*============= helping css end here  =========================  */
 .help-business-section{
-    padding: 55px 0px;
+    padding: 100px 0px;
 }
 
 /* ========== key point css =========================*/
-.key-point-section .card{
+.key-point-section .key-point-wrapper{
     border: unset;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .inner-key-wrapper{
     display:flex;
@@ -1884,11 +1934,14 @@ font-weight: 400;
    font-weight: 500;
    text-transform: uppercase;
 }
+.inner-key-wrapper .card-body p{
+    text-align: center;
+}
 
 
 /*============================ power skill section css ============ */
-.power-skills-section .power-skill-accordion{
-
+.power-skills-section {
+  padding-top: 55px;
 }
 .power-skill-accordion  .power-skill-item{
     margin-bottom: 20px;
@@ -1944,21 +1997,42 @@ transition: unset;
 .img-wrraper-power-skill{
     position: relative;
 }
+.img-wrraper-power-skill::before{
+   content: '';
+   background-image: url(../Images/Build\ your\ Workforce\ with\ Power\ Skills\ graph\ .png);
+   position: absolute;
+   width: 155px;
+   height: 155px;
+   top: -60px;
+   right: 26%;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: contain;
+   opacity: 0.5;
+   z-index: -1;
+}
 .img-wrraper-power-skill .skill-text-card{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    border-radius: 28px;
-    width: 155px;
-    height: 125px;
+    border-radius: 48px;
+    width: 172px;
+    height: 128px;
     /* color: #fff; */
     top: 0px;
     right: 0px;
     background-color: #fff;
-    border: 2px solid rgba(128, 128, 128, 0.774);
+    /* border: 2px solid rgba(128, 128, 128, 0.774); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: absolute;
+}
+.img-wrraper-power-skill .pmi-bottom{
+    bottom: 34px;
+    position: absolute;
+    left: 0px;
+    top: unset;
 }
 .img-wrraper-power-skill .skill-text-card img{
     width: 50px;
@@ -1985,3 +2059,69 @@ transition: unset;
     height: auto;
     max-height: 55px;
 }
+/* =================================== growth section css ======================= */
+.growth-section .clip-user-img{
+  width: 100%;  
+  height: 100%;
+  object-fit: cover;
+}
+.growth-section .growth-card{
+    padding: 25px;
+}
+.growth-section .growth-card h4{
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.growth-card h5{
+    font-size: 22px;
+    color: red;
+    line-height: 33px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    
+}
+.growth-card .degination{
+    font-size: 15px;
+    color: #333;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.growth-section .img-w-d{
+   border: unset;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.growth-section .growth-heading{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.growth-section{
+    padding: 55px 0px;
+}
+.upskill-get-in-btn{
+  border-radius: 8px;
+  color: #000;
+}
+
+/* ======== animation key frame ======== */
+@keyframes moment {
+    0% { margin-left: 7px; }
+    50% {  margin-left: -7px; }
+    100% {  margin-left: 7px; }
+  }
+@keyframes momenttwo {
+    0% { margin-right: 7px; }
+    50% {  margin-right: -7px; }
+    100% {  margin-right: 7px; }
+  }
+@keyframes momenttyew {
+    0% { margin-right: 5px; }
+    50% {  margin-right: -5px; }
+    100% {  margin-right: 5px; }
+  }
