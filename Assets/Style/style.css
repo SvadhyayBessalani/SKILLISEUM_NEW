@@ -1856,7 +1856,7 @@ padding: 25px 0px;
   height: 220px;
   position: absolute;
   bottom: 0px;
-  left: 40px;
+  right: 86%;
   background-position: bottom;
   background-size: contain;
   opacity: 0.3;
@@ -1948,6 +1948,10 @@ font-weight: 400;
     border: 10px #ffc107 solid;
     transform: rotate(45deg);
     z-index: 1;
+}
+.inner-key-card:hover::before
+{
+    border: 10px #0a4888 solid;
 }
 .inner-key-wrapper .inner-key-card .card-body{
    z-index: 9;
@@ -2064,17 +2068,17 @@ transition: unset;
     width: 172px;
     height: 128px;
     /* color: #fff; */
-    top: 0px;
-    right: 0px;
+    top: 70px;
+    right: 30px;
     background-color: #fff;
     /* border: 2px solid rgba(128, 128, 128, 0.774); */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: absolute;
 }
 .img-wrraper-power-skill .pmi-bottom{
-    bottom: 34px;
+    bottom: 84px;
     position: absolute;
-    left: 0px;
+    left: 130px;
     top: unset;
 }
 .img-wrraper-power-skill .skill-text-card img{
