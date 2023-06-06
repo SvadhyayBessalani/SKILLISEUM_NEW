@@ -1823,6 +1823,12 @@ padding: 25px 0px;
   align-items: center;
 }
 
+.hero-img-wrapper  .single-img-g{
+    height: fit-content;
+    min-height: 670px;
+    max-height: 670px;
+    object-fit: contain;
+}
 /* =========================== helping card css ================= */
 .help-business-section{
     position: relative;
@@ -1834,7 +1840,7 @@ padding: 25px 0px;
    height: 220px;
    position: absolute;
    top: 0px;
-   right: 0px;
+   right: 40px;
    background-position: right;
    background-repeat: no-repeat;
    background-size: contain;
@@ -1881,6 +1887,12 @@ padding: 25px 0px;
   border: unset;
   margin-bottom: 30px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+}
+.help-business-card .card:hover{
+     background-color: #edeff2;
+    transition:  .3s ease-in-out;
+    transform: scale(1.1) translateZ(0);
 }
 .help-business-card .card-body{
  padding: 30px;
@@ -1904,7 +1916,7 @@ font-weight: 400;
 /* ========== key point css =========================*/
 .key-point-section .key-point-wrapper{
     border: unset;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 .inner-key-wrapper{
     display:flex;
@@ -1915,12 +1927,36 @@ font-weight: 400;
     height: auto;
     max-width: 275px;
     padding: 10px 0px;
+    position: relative;
     border: unset;
+    overflow: hidden;
+    z-index: 9;
+    
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    
+}
+.inner-key-card::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    border: 10px #ffc107 solid;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.inner-key-wrapper .inner-key-card .card-body{
+   z-index: 9;
 }
 .inner-key-card img{
-    width: 125px;
-    height: 125px;
-    min-height: 125px;
+    width: 95px;
+    height: 95px;
+    min-height: 95px;
+    line-height: 95px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1942,6 +1978,12 @@ font-weight: 400;
 /*============================ power skill section css ============ */
 .power-skills-section {
   padding-top: 55px;
+}
+.power-skill-accordion{
+    height: 435px;
+    min-height: 435px;
+    overflow: auto;
+    width: 100%;
 }
 .power-skill-accordion  .power-skill-item{
     margin-bottom: 20px;
@@ -1993,6 +2035,7 @@ transition: unset;
 .power-skill-item .accordion-button:not(.collapsed){
    background-color: unset;
    color: #4aa1ca;
+   box-shadow: unset;
 }
 .img-wrraper-power-skill{
     position: relative;
@@ -2003,12 +2046,12 @@ transition: unset;
    position: absolute;
    width: 155px;
    height: 155px;
-   top: -60px;
-   right: 26%;
+   top: -53px;
+   right: 18%;
    background-position: top;
    background-repeat: no-repeat;
    background-size: contain;
-   opacity: 0.5;
+   opacity: 0.3;
    z-index: -1;
 }
 .img-wrraper-power-skill .skill-text-card{
@@ -2056,8 +2099,9 @@ transition: unset;
   
 }
 .trainer-company-logo .single-logo img{
-    height: auto;
-    max-height: 55px;
+    width: 100%;
+    height: 175px;
+    object-fit: contain;
 }
 /* =================================== growth section css ======================= */
 .growth-section .clip-user-img{

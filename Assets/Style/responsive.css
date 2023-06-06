@@ -8,6 +8,15 @@
 
 }
 @media(max-width:1024px){
+    .help-business-card{
+        gap: 0 45px;
+    }
+    .help-business-card .card-body{
+        padding: 20px;
+    }
+    .help-business-card .card h4{
+        margin-bottom: 20px;
+    }
 
 }
 @media(max-width:991px){
@@ -61,7 +70,23 @@
     .navbar-sidebar{
         padding: 0 15px;
     }
+    .help-business-card .card{
+        max-width: 325px;
+    }
+    .help-business-card{
+        gap: 0 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 @media(max-width:768px){
 
+}
+@media(max-width:567px){
+    .help-business-card{
+      gap: unset;
+    }
+    .help-business-card .card{
+        max-width: unset;
+    }
 }

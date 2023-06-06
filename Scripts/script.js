@@ -23,6 +23,8 @@ $('.brand-carousel').owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
+    dots:false,
+    autoplay: true,
     responsive:{
       0:{
         items:1
@@ -34,7 +36,10 @@ $('.brand-carousel').owlCarousel({
         items:5
       }
     }
-  })
+  });
+
+
+
 $('.brand-carouseltwo').owlCarousel({
     loop:true,
     margin:10,
@@ -50,9 +55,68 @@ $('.brand-carouseltwo').owlCarousel({
         items:3
       }
     }
-  })
+  });
 
-  function accordions(className) {
+
+// $('.Instructors').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     autoplay:true,
+//     dots:false,
+//     arrow:false,
+//     nav: true,
+//     autoplay: true,
+//     autoplayHoverPause: true,
+//     responsive:{
+//       0:{
+//         items:1
+//       },
+//       600:{
+//         items:3
+//       },
+//       1000:{
+//         items:3
+//       }
+//     }
+//   });
+
+
+jQuery("#carousel").owlCarousel({
+  autoplay: true,
+  rewind: true, /* use rewind if you don't want loop */
+  margin: 20,
+   /*
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
+  */
+  responsiveClass: true,
+  autoHeight: true,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  nav: true,
+  items:1,
+  responsive: {
+    0: {
+      items: 1
+    },
+
+    600: {
+      items: 3
+    },
+
+    1024: {
+      items: 4
+    },
+
+    1366: {
+      items: 4
+    }
+  }
+});
+
+
+ 
+ function accordions(className) {
     console.log(className);
     $('#accordionExample1 .accordion-collapse').removeClass("show");
     $(`#${className}`).hasClass("show") ? $(`#${className}`).removeClass("show") : $(`#${className}`).addClass("show");
